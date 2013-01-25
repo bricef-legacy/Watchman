@@ -4,7 +4,7 @@ Ideas
 Use a [Tornado wsgi container](http://www.tornadoweb.org/documentation/wsgi.html) for the webapp and a [sockjs container](https://github.com/bricef/origin-prototype/blob/master/Server/proxy.py) for the socket connection. Can also use the [TornadoAsyncNotifier](https://github.com/seb-m/pyinotify/blob/master/python2/examples/tornado_notifier.py) for the filesystem watching. 
 
 
-Communication between loops achieved using good ol' Python queues
+Communication between loops achieved using good ol' Python queues, and would use [python-daemon](http://pypi.python.org/pypi/python-daemon/) to behave correctly.
 
 
 Would look a little like:
