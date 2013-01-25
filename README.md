@@ -29,5 +29,5 @@ Note how the configuration file is a json document. A config might look like thi
 }
 ```
 
-
+In fact, Watchman itself will run the webserver as a Watchman-managed process :)
 
