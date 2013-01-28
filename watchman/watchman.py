@@ -59,6 +59,6 @@ if __name__ == '__main__':
     # Get the show on the road!
     ioloop.start()
 
-# Because I'm a pedant
-ioloop.close()
-notifier.stop()
+    # Because I'm a pedant
+    ioloop.close()
+    notifer.stop()

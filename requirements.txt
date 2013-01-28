@@ -1,6 +1,9 @@
 bottle==0.11.5
 distribute==0.6.19
+nose==1.2.1
 pyinotify==0.9.4
+python-termstyle==0.1.10
+rednose==0.3.3
 sockjs-tornado==0.0.5
 tornado==2.4.1
 wsgiref==0.1.2
