@@ -1,0 +1,30 @@
+<html>
+<head>
+  <style>
+    * {
+      margin:0px;
+      padding:0px;
+      box-sizing:border-box;
+    }
+  </style>
+  <script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Watchman</h1>
+  <div id="log"></div> 
+  <script>
+     var sock = new SockJS('http://localhost:9999/echo');
+     sock.onopen = function() {
+         console.log('open');
+     };
+     sock.onmessage = function(e) {
+         console.log('message', e.data);
+         $("#log").append("<p>"+e.data+"</p>");
+     };
+     sock.onclose = function() {
+         console.log('close');
+     };
+  </script>
+</body>
+</html>
